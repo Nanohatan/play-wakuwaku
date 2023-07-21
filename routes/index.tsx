@@ -2,6 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
 import Counter from "../islands/Counter.tsx";
 import  Hero  from "../components/Hero.tsx";
+import Explanation from "../components/Explanation.tsx";
 export default function Home() {
   const count = useSignal(3);
   return (
@@ -17,7 +18,13 @@ export default function Home() {
           alt="the fresh logo: a sliced lemon dripping with juice"
         />
 
+      <div
+      class="w-full justify-center">
         <Hero />
+        <Explanation text="QRコードの作り方"/>
+        <Explanation  text="レジスターの遊び方"/>
+      </div>
+
       </div>
     </>
   );
