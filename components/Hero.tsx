@@ -9,8 +9,8 @@ export default function Hero() {
       items-center flex-col gap-8 rounded-xl
       bg-cover bg-center bg-MyWhite"
     >
-      <div class="space-y-4 text-center">
-        <h1 class="text-4xl inline-block font-bold text-MyOrange"
+      <div class="space-y-4 text-center z-0">
+        <h1 class="text-4xl inline-block font-bold text-MyOrange z-10"
         >お店屋さんごっこDX</h1>
         <p class="text-xl max-w-lg text-MyOrangeLighter"
         >
