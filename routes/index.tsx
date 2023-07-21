@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
 import Counter from "../islands/Counter.tsx";
-import  Hero  from "../components/Noren.tsx";
+import  Hero  from "../components/Hero.tsx";
 export default function Home() {
   const count = useSignal(3);
   return (
