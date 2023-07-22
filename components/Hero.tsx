@@ -20,7 +20,7 @@ export default function Hero() {
 
       <div class="flex flex-col md:flex-row items-center">
         <a
-          href="#"
+          href="/make_code"
           class="m-3 block mt-4 cursor-pointer inline-flex items-center group 
           bg-white px-8 py-2 rounded-md font-bold  hover:bg-gray-200
           border-solid border-2 border-MyViolet text-MyViolet"

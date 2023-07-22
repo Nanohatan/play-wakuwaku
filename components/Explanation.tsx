@@ -1,8 +1,9 @@
+import InputForm from "./InputFrom.tsx";
 type Props = {
     text: string;
   };
   
-export default function Explanation({text,}:Props) {
+export default function Explanation({text,is_input}:Props) {
 
     return (
       <div
