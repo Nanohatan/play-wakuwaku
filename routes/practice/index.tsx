@@ -9,13 +9,14 @@ function Box({title}:string|null){
             <h1 class="text-3xl text-MyOrange">{title}</h1>
             <VideoButton />
             <CodeReader />
+            <ScanItemBox />
         </div>
 
     )
 }
 function CodeReader(){
     return (
-        <div class="mx-5">
+        <div class="m-5">
             <video id="video" height="auto" width="100%" 
             class="w-full border-2 border-MyOrange  max-h-200"
             ></video>
@@ -33,6 +34,24 @@ function VideoButton(){
     )
 }
 
+function ScanItemBox(){
+    return(
+        <div class="m-5 border-2 border-MyOrange min-h-[12em] p-3">
+
+            <div class="grid grid-cols-3 gap-2 p-1  text-MyOrangeLighter font-bold	">
+            <div class="col-span-3 justify-self-center"> スキャンしたものリスト</div>
+
+                <div class="col-span-2 justify-self-center">アイテムメイ</div>
+                <div class="col-span-1 justify-self-right"><span>100</span>円</div>
+
+                <div class="col-span-2 justify-self-center">アイテムメイ</div>
+                <div class="col-span-1 justify-self-right"><span>100</span>円</div>
+
+
+            </div>
+        </div>
+    )
+}
 export default function Home() {
     const date = new Date();
     date.setHours(date.getHours() + 1);
@@ -42,7 +61,7 @@ export default function Home() {
     <title>QRコードリーダー</title>
     </Head>
     <body>
-    <Box title="カメラ映像からQRコードを読み込む"
+    <Box title="カメラ映像からQRコードをスキャンしよう！"
     />
 
     <script type="text/javascript" src="https://unpkg.com/@zxing/browser@latest"></script>
