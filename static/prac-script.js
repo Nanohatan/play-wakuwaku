@@ -47,9 +47,11 @@ document.getElementById('toggleButton').addEventListener('click', () => {
     console.log("clicked");
   if (isCameraOn) {
     stopCamera();
+    document.getElementById('toggleButton').textContent = 'カメラをオンにする';
   } else {
     startCamera();
     controls =  startRead();
+    document.getElementById('toggleButton').textContent = 'カメラをオフにする';
   }
 });
 
