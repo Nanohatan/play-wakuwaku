@@ -22,8 +22,19 @@ let isCameraOn = false;
 let stream = null;
 
 async function startCamera() {
+  let facingMode = "user"
+  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+    facingMode = { exact: "environment" }
+  } 
   try {
-    stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    
+    stream = await navigator.mediaDevices.getUserMedia({
+      audio: false,
+      video: {
+        width: 640, height: 480,
+        facingMode:facingMode
+      }
+    })
     const videoElement = document.getElementById('video');
     videoElement.srcObject = stream;
     isCameraOn = true;

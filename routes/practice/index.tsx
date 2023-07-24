@@ -3,7 +3,7 @@ import { Head } from "$fresh/runtime.ts";
 
 function Box({title}:string|null){
     return(
-        <div class="p-3 min-h-[24em]  bg-MyWhite m-3 
+        <div class="p-3 min-h-[24em] z-0 bg-MyWhite m-3 
         rounded-xl border-solid border-4 border-MyOrange">
 
             <h1 class="text-3xl text-MyOrange">{title}</h1>
@@ -25,7 +25,7 @@ function CodeReader(){
 }
 function VideoButton(){
     return (
-        <div class="absolute text-MyWhite">
+        <div class="absolute text-MyWhite z-10">
             <button id="toggleButton" class="cursor-pointer	 bg-MyViolet p-3 m-2 rounded-full">
             カメラをオンにする
             </button>
