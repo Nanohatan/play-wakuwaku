@@ -19,13 +19,20 @@ export default function InputForm() {
                 <input type="text" class=" form-input px-3 m-1 border-solid border-2 border-MyOrangeLighter" />
                 </div>
 
+                <div class="p-2">
                 <div class="grid grid-cols-3  gap-4">
-                <div class="col-span-2 border-solid border-2 border-MyOrangeLighter">02</div>
-                <div class="col-span-1 border-solid border-2 border-MyOrangeLighter">03</div>
+                <div class="col-span-2 border-solid border-2 border-MyOrangeLighter">アイテムメイ</div>
+                <div class="col-span-1 border-solid border-2 border-MyOrangeLighter"><span>1000</span>円</div>
+
                 <div class="col-span-2 border-solid border-2 border-MyOrangeLighter">04</div>
-                
+                <div class="col-span-1 w-full border-solid border-2 border-MyOrangeLighter justify-self-center"
+                ><span class="">1000</span>円</div>
+                </div>
                 </div>
 
+                <div>
+                <button class="rounded-full cursor-pointer block rounded-md font-bold m-3 p-3 bg-MyWhite text-MyViolet hover:bg-gray-200 border-solid border-2 border-MyViolet">QRコードを作る</button>
+                </div>
                 
               </div>
            </div>
