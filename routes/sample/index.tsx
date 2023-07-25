@@ -53,8 +53,6 @@ function ScanItemBox(){
     )
 }
 export default function Home() {
-    const date = new Date();
-    date.setHours(date.getHours() + 1);
   return (
     <>
     <Head>

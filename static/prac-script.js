@@ -7,7 +7,8 @@ async function startRead(){
         // you can also use controls API in this scope like the controls
         // returned from the method.
         if (result){
-            console.log("re",result);
+          console.log("re",result);
+            
         }
         if (error){
             // console.log("err",error);

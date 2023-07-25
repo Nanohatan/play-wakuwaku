@@ -30,8 +30,8 @@ export default function InputForm() {
                 </div>
                 </div>
 
-                <div>
-                <button class="rounded-full cursor-pointer block rounded-md font-bold m-3 p-3 bg-MyWhite text-MyViolet hover:bg-gray-200 border-solid border-2 border-MyViolet">QRコードを作る</button>
+                <div class="grid">
+                <button class="	justify-self-center rounded-full cursor-pointer block rounded-md font-bold m-3 p-3 bg-MyWhite text-MyViolet hover:bg-gray-200 border-solid border-2 border-MyViolet">QRコードを作る</button>
                 </div>
                 
               </div>
