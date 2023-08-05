@@ -20,8 +20,6 @@ function InputGrid(){
     <div class="grid grid-cols-3  gap-4">
 
         <InputRow />
-        <InputRow />
-        <InputRow />
 
         <div class="col-span-3 justify-self-center ">
         <button id="gen-qr-button" class="rounded-full cursor-pointer block rounded-md font-bold m-3 p-3 bg-MyWhite text-MyViolet hover:bg-gray-200 border-solid border-2 border-MyViolet">
