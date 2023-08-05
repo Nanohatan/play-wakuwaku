@@ -19,7 +19,7 @@ function InputButton(){
   </>
 }
 
-function DisplayBit({n}:number){
+export function DisplayBit({n}:number){
   return <>
   
   <div class="col-span-1 text-center border-dashed border-x-2 border-MyViolet border-b-4 border-MyViolet ">{n}</div>
@@ -43,16 +43,12 @@ function Calculator(){
   <div class="col-span-2 row-span-2 m-2 text-right 
   border-solid border-4 border-MyViolet">
    <div id="name" class="p-1 row-span-1 border-dashed border-b-4 border-MyViolet">
-    リンゴ</div>
+    アイテムメイ</div>
 
-    <div class="row-span-1">
+    <div id="price" class="row-span-1 p-3">
       
     <div class="grid grid-cols-5 grid-rows-1">
-    <DisplayBit/>
-    <DisplayBit/>
-    <DisplayBit/>
-     <DisplayBit n="1" />      
-      <DisplayBit n="0"/>
+
       
     </div>
       

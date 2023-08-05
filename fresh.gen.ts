@@ -15,10 +15,11 @@ import * as $9 from "./routes/sample/register/[id].tsx";
 import * as $10 from "./routes/sample/register/index.tsx";
 import * as $11 from "./routes/sample/register_reader/[tmp].tsx";
 import * as $12 from "./routes/sample/socket.tsx";
-import * as $$0 from "./islands/CameraButton.tsx";
-import * as $$1 from "./islands/Counter.tsx";
-import * as $$2 from "./islands/Reader.tsx";
-import * as $$3 from "./islands/SocketClient.tsx";
+import * as $$0 from "./islands/AddScanItem.tsx";
+import * as $$1 from "./islands/CameraButton.tsx";
+import * as $$2 from "./islands/Counter.tsx";
+import * as $$3 from "./islands/Reader.tsx";
+import * as $$4 from "./islands/SocketClient.tsx";
 
 const manifest = {
   routes: {
@@ -37,10 +38,11 @@ const manifest = {
     "./routes/sample/socket.tsx": $12,
   },
   islands: {
-    "./islands/CameraButton.tsx": $$0,
-    "./islands/Counter.tsx": $$1,
-    "./islands/Reader.tsx": $$2,
-    "./islands/SocketClient.tsx": $$3,
+    "./islands/AddScanItem.tsx": $$0,
+    "./islands/CameraButton.tsx": $$1,
+    "./islands/Counter.tsx": $$2,
+    "./islands/Reader.tsx": $$3,
+    "./islands/SocketClient.tsx": $$4,
   },
   baseUrl: import.meta.url,
 };

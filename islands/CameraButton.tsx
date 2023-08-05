@@ -3,11 +3,9 @@
 import { useEffect,useState } from "preact/hooks";
 import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
 import { PageProps } from "$fresh/server.ts";
-
+import AddScanItem from "./AddScanItem.tsx"
 export default function CameraButton(props) {
     const _id = props.id.id;
-
-
     const socket = io("https://polite-goose-51.deno.dev/");
 
   useEffect(() => {
@@ -41,6 +39,7 @@ export default function CameraButton(props) {
           result.id=_id;
           socket.emit("register send info",result);
           console.log("emit done");
+          AddScanItem(result.text);
         }
         if (error){
             // console.log("err",error);
