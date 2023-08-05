@@ -1,5 +1,6 @@
 import { PageProps } from "$fresh/server.ts";
 import SocketClient from "../../islands/SocketClient.tsx";
+import { Head } from "$fresh/runtime.ts";
 
 function CalculatorButton({buttonNumber}:number){
   return <>
@@ -63,15 +64,20 @@ function Calculator(){
 }
 
 export default function Register(props: PageProps) {
-  const id = props.url.pathname.split("/").pop();
-  const ref = "/register_reader/"+id
+  const id = props.params.id;
+  let ref = "/register_reader/"+id
+
   return <>
+  <Head>
+    <title>QRコードリーダー</title>
+    </Head>
     <div class="p-3 min-h-[24em] z-0 bg-MyWhite m-3 
     rounded-xl border-solid border-4 border-MyOrange">
     <Calculator />
+    <a id="switch" href={ref} class="block text-center py-2 rounded-md border-solid border-2 border-MyViolet text-MyViolet">コードスキャンに切り替える</a>
+
     <SocketClient id={id}/>
 
-    <a href={ref} class="block text-center py-2 rounded-md border-solid border-2 border-MyViolet text-MyViolet">コードスキャンに切り替える</a>
 
 
 </div>

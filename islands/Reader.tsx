@@ -8,6 +8,7 @@ function Scan(){
     
 }
 export default function Reader() {
+  
     return (
        
       <div class="flex gap-2 w-full">
