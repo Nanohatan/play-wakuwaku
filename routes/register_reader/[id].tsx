@@ -13,6 +13,9 @@ function Box({title,id}:string|null){
             <VideoButton id={id}/>
             <CodeReader />
             <ScanItemBox />
+
+            <div class="block text-center py-2 rounded-md border-solid border-2 border-MyViolet text-MyViolet">コードスキャンに切り替える</div>
+
         </div>
 
     )
