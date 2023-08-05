@@ -2,15 +2,18 @@
 
 import { useEffect,useState } from "preact/hooks";
 import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+import { PageProps } from "$fresh/server.ts";
+
+export default function CameraButton(props) {
+    const _id = props.id.id;
 
 
-export default function CameraButton() {
     const socket = io("https://polite-goose-51.deno.dev/");
 
   useEffect(() => {
     socket.on("connection");
-    socket.emit("join", { id: window.location.pathname });
-    console.log("id is",window.location.pathname);
+    socket.emit("join", { id: _id});
+    console.log("id is",_id);
     
 
     // クリーンアップ関数を返すことでコンポーネントがアンマウントされたときに socket.io の接続を解除する
@@ -35,7 +38,7 @@ export default function CameraButton() {
           result.text.name = decodedText;
           console.log(decodedText);
 
-          result.id=window.location.pathname;
+          result.id=_id;
           socket.emit("register send info",result);
           console.log("emit done");
         }

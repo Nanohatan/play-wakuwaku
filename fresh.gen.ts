@@ -18,6 +18,7 @@ import * as $12 from "./routes/sample/socket.tsx";
 import * as $$0 from "./islands/CameraButton.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Reader.tsx";
+import * as $$3 from "./islands/SocketClient.tsx";
 
 const manifest = {
   routes: {
@@ -39,6 +40,7 @@ const manifest = {
     "./islands/CameraButton.tsx": $$0,
     "./islands/Counter.tsx": $$1,
     "./islands/Reader.tsx": $$2,
+    "./islands/SocketClient.tsx": $$3,
   },
   baseUrl: import.meta.url,
 };

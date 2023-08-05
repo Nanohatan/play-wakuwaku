@@ -31,7 +31,7 @@ function CodeReader(){
 function VideoButton(id){
     return (
         <div class="absolute text-MyWhite z-10">
-            <CameraButton id={id}/>
+            <CameraButton id = {id}/>
 
         </div>
     )

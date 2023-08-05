@@ -1,4 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
+import SocketClient from "../../islands/SocketClient.tsx";
 
 function CalculatorButton({buttonNumber}:number){
   return <>
@@ -41,7 +42,7 @@ function Calculator(){
 
   <div class="col-span-2 row-span-2 m-2 text-right 
   border-solid border-4 border-MyViolet">
-   <div class="p-1 row-span-1 border-dashed border-b-4 border-MyViolet">
+   <div id="name" class="p-1 row-span-1 border-dashed border-b-4 border-MyViolet">
     リンゴ</div>
 
     <div class="row-span-1">
@@ -71,7 +72,8 @@ export default function Register(props: PageProps) {
     <div class="p-3 min-h-[24em] z-0 bg-MyWhite m-3 
 rounded-xl border-solid border-4 border-MyOrange">
  <Calculator />
- 
+ <SocketClient id={id}/>
+
 </div>
 
   </>
