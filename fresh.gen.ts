@@ -6,10 +6,15 @@ import * as $0 from "./routes/[name].tsx";
 import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/index.tsx";
 import * as $3 from "./routes/make_code.tsx";
-import * as $4 from "./routes/sample/index.tsx";
-import * as $5 from "./routes/sample/register/[id].tsx";
-import * as $6 from "./routes/sample/register_reader/[tmp].tsx";
-import * as $7 from "./routes/sample/socket.tsx";
+import * as $4 from "./routes/register/[id].tsx";
+import * as $5 from "./routes/register/index.tsx";
+import * as $6 from "./routes/register_reader/[id].tsx";
+import * as $7 from "./routes/register_reader/index.tsx";
+import * as $8 from "./routes/sample/index.tsx";
+import * as $9 from "./routes/sample/register/[id].tsx";
+import * as $10 from "./routes/sample/register/index.tsx";
+import * as $11 from "./routes/sample/register_reader/[tmp].tsx";
+import * as $12 from "./routes/sample/socket.tsx";
 import * as $$0 from "./islands/CameraButton.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Reader.tsx";
@@ -20,10 +25,15 @@ const manifest = {
     "./routes/api/joke.ts": $1,
     "./routes/index.tsx": $2,
     "./routes/make_code.tsx": $3,
-    "./routes/sample/index.tsx": $4,
-    "./routes/sample/register/[id].tsx": $5,
-    "./routes/sample/register_reader/[tmp].tsx": $6,
-    "./routes/sample/socket.tsx": $7,
+    "./routes/register/[id].tsx": $4,
+    "./routes/register/index.tsx": $5,
+    "./routes/register_reader/[id].tsx": $6,
+    "./routes/register_reader/index.tsx": $7,
+    "./routes/sample/index.tsx": $8,
+    "./routes/sample/register/[id].tsx": $9,
+    "./routes/sample/register/index.tsx": $10,
+    "./routes/sample/register_reader/[tmp].tsx": $11,
+    "./routes/sample/socket.tsx": $12,
   },
   islands: {
     "./islands/CameraButton.tsx": $$0,
