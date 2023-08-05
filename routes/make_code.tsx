@@ -34,7 +34,7 @@ function InputGrid(){
 function FormBox(){
     return <>
     <div
-    class="p-3 min-h-[24em]  bg-MyWhite m-3
+    class="p-3 min-h-[12em]  bg-MyWhite m-3
     rounded-xl border-solid border-4 border-MyOrange"
     >
 
