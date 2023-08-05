@@ -14,7 +14,7 @@ export default function Hero() {
         >お店屋さんごっこDX</h1>
         <p class="text-xl max-w-lg text-MyOrangeLighter"
         >
-          QRコードをおもちゃにくっつけてレジスターごっこ！
+          QRコードをおもちゃにくっつけて、レジスター遊ぼう！
         </p>
       </div>
 
@@ -29,7 +29,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="#"
+          href="/sample/register"
           class="m-3 block mt-4 cursor-pointer inline-flex items-center group 
           bg-white px-8 py-2 rounded-md font-bold hover:bg-gray-200
           border-solid border-2 border-MyViolet text-MyViolet"

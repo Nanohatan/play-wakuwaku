@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
-
-
+import Reader from "../../../islands/Reader.tsx";
+import CameraButton from "../../../islands/CameraButton.tsx";
 function Box({title}:string|null){
     return(
         <div class="p-3 min-h-[24em] z-0 bg-MyWhite m-3 
@@ -20,15 +20,15 @@ function CodeReader(){
             <video id="video" height="auto" width="100%" 
             class="w-full border-2 border-MyOrange  max-h-200"
             ></video>
+            
+            <Reader/>
         </div>
     )
 }
 function VideoButton(){
     return (
         <div class="absolute text-MyWhite z-10">
-            <button id="toggleButton" class="cursor-pointer	 bg-MyViolet p-3 m-2 rounded-full">
-            カメラをオンにする
-            </button>
+            <CameraButton/>
 
         </div>
     )
@@ -64,7 +64,6 @@ export default function Home() {
 
     <script type="text/javascript" src="https://unpkg.com/@zxing/browser@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js"></script>
-    <script src="prac-script.js"></script>
     </body>
     </>
   );

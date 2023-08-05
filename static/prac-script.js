@@ -1,14 +1,25 @@
 let controls = null;
+const socket = io("https://polite-goose-51.deno.dev/");
+socket.on("connection", () => {
+});
+socket.emit("join",{id:window.location.pathname})
+console.log("id is",window.location.pathname);
 async function startRead(){
     const codeReader = new ZXingBrowser.BrowserQRCodeReader();
     const sourceElem = document.querySelector('video');
     const controls = await codeReader.decodeFromVideoElement(sourceElem, (result, error, controls) => {
-        // use the result and error values to choose your actions
-        // you can also use controls API in this scope like the controls
-        // returned from the method.
+
         if (result){
-          console.log("re",result);
-            
+          result.text = JSON.parse(result.text);
+          const nameValues = Object.values(result.text.name);
+          const uint8Array = new Uint8Array(nameValues);
+          const decoder = new TextDecoder("utf-8"),
+                decodedText = decoder.decode(uint8Array);  
+          result.text.name = decodedText;
+
+
+          result.id=window.location.pathname;
+          socket.emit("register send info",result);
         }
         if (error){
             // console.log("err",error);
@@ -66,4 +77,7 @@ document.getElementById('toggleButton').addEventListener('click', () => {
     document.getElementById('toggleButton').textContent = 'カメラをオフにする';
   }
 });
+socket.on("register receive info", (data) => {
+  console.log("resiter receiveinfo " ,data);
 
+});

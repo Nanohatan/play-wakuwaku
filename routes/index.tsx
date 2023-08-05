@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>お店屋さんごっこDX</title>
+        <title>お店屋さんごっこ</title>
       </Head>
       <div class=" p-4 mx-auto max-w-screen-md">
         <img

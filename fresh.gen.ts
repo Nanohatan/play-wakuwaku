@@ -8,8 +8,11 @@ import * as $2 from "./routes/index.tsx";
 import * as $3 from "./routes/make_code.tsx";
 import * as $4 from "./routes/sample/index.tsx";
 import * as $5 from "./routes/sample/register/[id].tsx";
-import * as $6 from "./routes/sample/socket.tsx";
-import * as $$0 from "./islands/Counter.tsx";
+import * as $6 from "./routes/sample/register_reader/[tmp].tsx";
+import * as $7 from "./routes/sample/socket.tsx";
+import * as $$0 from "./islands/CameraButton.tsx";
+import * as $$1 from "./islands/Counter.tsx";
+import * as $$2 from "./islands/Reader.tsx";
 
 const manifest = {
   routes: {
@@ -19,10 +22,13 @@ const manifest = {
     "./routes/make_code.tsx": $3,
     "./routes/sample/index.tsx": $4,
     "./routes/sample/register/[id].tsx": $5,
-    "./routes/sample/socket.tsx": $6,
+    "./routes/sample/register_reader/[tmp].tsx": $6,
+    "./routes/sample/socket.tsx": $7,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
+    "./islands/CameraButton.tsx": $$0,
+    "./islands/Counter.tsx": $$1,
+    "./islands/Reader.tsx": $$2,
   },
   baseUrl: import.meta.url,
 };
