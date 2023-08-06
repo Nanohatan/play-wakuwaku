@@ -25,8 +25,8 @@ export default function SocketClient({id}) {
     const priceDisplayDiv = document.getElementById("price");
     const price =  data.text.price;
     nameDisplayDiv.textContent = name;
-    priceDisplayDiv.innerHTML = price;
-    console.log(price.length);
+    priceDisplayDiv.value = price;
+
     // if (price.length<5){
     //     for (let i = 0; i < price.length-5; i++) {
     //         const divElement = document.createElement("div");

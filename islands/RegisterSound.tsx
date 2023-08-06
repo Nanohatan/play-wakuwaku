@@ -1,12 +1,15 @@
 
-function playSound(){
+function playSound(key){
     const audio = new Audio('/audio.mp3');
     audio.play();
+    document.getElementById('price').value += key;
+    
 
 }
+
 function CalculatorButton({buttonNumber}:number){
   return <>
-  <button onClick={()=>playSound()}
+  <button onClick={()=>playSound(buttonNumber)}
   class="block text-center py-2 
   rounded-md border-solid border-2 border-MyViolet text-MyViolet"
   data-number={buttonNumber}>
