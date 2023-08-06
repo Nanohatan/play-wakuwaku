@@ -16,7 +16,7 @@ function InputGrid(){
     <title>QRコード作成</title>
     </Head>
     <div>
-    <div class="m-3 border-solid border-2 border-MyOrange">
+    <div class="m-3 rounded-md  border-solid border-2 border-MyOrange">
     <div class="grid grid-cols-3  gap-4">
 
         <InputRow />
@@ -66,11 +66,11 @@ function ResultBox(){
 
     <div class="left-0">
     <div class="text-3xl text-MyOrange underline">
-    コード一覧
+    QRコード一覧
     </div>
 
 
-    <div class="m-3 border-solid border-2 border-MyOrange">
+    <div class="m-3 rounded-md  border-solid border-2 border-MyOrange">
         <div id="result" class="grid grid-cols-3 p-5 text-MyOrange">
 
 
