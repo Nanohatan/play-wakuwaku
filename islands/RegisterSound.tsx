@@ -2,7 +2,12 @@
 function playSound(key){
     const audio = new Audio('/audio.mp3');
     audio.play();
-    document.getElementById('price').value += key;
+    if (key==="C"){
+        document.getElementById('price').value = "";
+    }else{
+        document.getElementById('price').value += key;
+    }
+    
     
 }
 
@@ -34,12 +39,12 @@ export default function RegisterSound({isNormalBtn}) {
             </div>
             </>)
     }else{
-        const i: string[] = ["+","x","÷"]
+        const i: string[] = ["+","x","÷","C","="]
         return (
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 grid-rows-2">
                 {i.map((element) => (
                 <button onClick={()=>playSound(element)}
-                class="block mx-2 text-center py-2  col-span-1
+                class="block mx-2 my-1 text-center py-2  col-span-1
                 rounded-md border-solid border-2 border-MyViolet text-MyViolet"
                 >
                   {element}</button>

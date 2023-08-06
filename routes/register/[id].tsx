@@ -40,7 +40,7 @@ function Calculator(){
 
   </div>
 
-  <div class="col-span-2 row-span-2 m-2 text-right 
+  <div class="col-span-2 row-span-1 m-2 text-right 
   border-solid border-4 border-MyViolet">
    <div id="name" class="p-1 row-span-1 border-dashed border-b-4 border-MyViolet">
     アイテムメイ</div>
