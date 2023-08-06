@@ -79,7 +79,7 @@ printBtn.addEventListener("click", () => {
     const pdf = new jspdf.jsPDF();
 
     // Canvasの内容をPDFに追加
-    // pdf.addImage(canvas, "PNG", 10, 10, 190, 280); // 画像サイズと位置を調整
+    pdf.addImage(canvas, "PNG", 10, 10, 190, 280); // 画像サイズと位置を調整
 
     // // PDFをダウンロード
     // pdf.save("qrcode.pdf");

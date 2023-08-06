@@ -44,8 +44,8 @@ function ScanItemBox(){
     return(
         <div class="m-5 border-2 border-MyOrange min-h-[12em] p-3">
 
-            <div  id="scan-list" class="grid grid-cols-3 gap-2 p-1  text-MyOrangeLighter font-bold	">
-            <div class="col-span-3 justify-self-center"> スキャンしたものリスト</div>
+            <div   id="scan-list" class="grid grid-cols-2 gap-2 p-1  text-MyOrangeLighter font-bold	">
+            <div class="col-span-2 justify-self-center"> スキャンしたものリスト</div>
 
             </div>
         </div>
