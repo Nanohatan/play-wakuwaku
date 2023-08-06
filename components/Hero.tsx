@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
         <p class="text-xl max-w-lg text-MyOrangeLighter"
         >
-          QRコードを作成して、おもちゃくにくっつけよう！
+          QRコードを作成して、おもちゃにくっつけよう！
         </p>
       </div>
 
