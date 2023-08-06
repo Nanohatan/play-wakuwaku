@@ -46,7 +46,7 @@ function Calculator(){
     アイテムメイ</div>
 
     <div  class="row-span-1 p-3">
-    <input  id="price" style="text-align:right;" readonly></input>
+    <input id="price" style="text-align:right; width:100%;" readonly></input>
       
     </div>
 
