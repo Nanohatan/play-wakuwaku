@@ -20,6 +20,7 @@ export default function CameraButton(props) {
     };
   }, []); // 空の配列を渡すことで一度だけ実行される
   socket.on("register receive info", (data) => {
+    playSound();
     console.log("resiter receiveinfo " ,data);
   });
   async function startRead(){
@@ -109,4 +110,9 @@ export default function CameraButton(props) {
       </button>
     </>
   );
+}
+
+function playSound(){
+    const audio = new Audio('/audio.mp3');
+    audio.play();
 }
