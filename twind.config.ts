@@ -10,5 +10,6 @@ export default {
       MyWhite:"#FFF6F4",
       // 他のカスタムカラーを必要に応じて追加
     },
+    
   },
 } as Options;
