@@ -4,9 +4,9 @@ import InputForm from "../components/InputFrom.tsx";
 function InputRow(){
     return <>
     <input class="name col-span-2 mt-2 mx-2 border-solid border-2 border-MyOrangeLighter" 
-    placeholder="ショウヒンメイ" type="text" />
+    placeholder="ショウヒンメイ" type="text" required/>
     <input class="price col-span-1 mt-2 mx-2 border-solid border-2 border-MyOrangeLighter" 
-    placeholder="1000" type="number"/>
+    placeholder="1000" type="number" required/>
 </>
 }
 
