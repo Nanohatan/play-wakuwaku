@@ -19,7 +19,8 @@ import * as $$0 from "./islands/AddScanItem.tsx";
 import * as $$1 from "./islands/CameraButton.tsx";
 import * as $$2 from "./islands/Counter.tsx";
 import * as $$3 from "./islands/Reader.tsx";
-import * as $$4 from "./islands/SocketClient.tsx";
+import * as $$4 from "./islands/RegisterSound.tsx";
+import * as $$5 from "./islands/SocketClient.tsx";
 
 const manifest = {
   routes: {
@@ -42,7 +43,8 @@ const manifest = {
     "./islands/CameraButton.tsx": $$1,
     "./islands/Counter.tsx": $$2,
     "./islands/Reader.tsx": $$3,
-    "./islands/SocketClient.tsx": $$4,
+    "./islands/RegisterSound.tsx": $$4,
+    "./islands/SocketClient.tsx": $$5,
   },
   baseUrl: import.meta.url,
 };

@@ -1,7 +1,7 @@
 import { PageProps } from "$fresh/server.ts";
 import SocketClient from "../../islands/SocketClient.tsx";
 import { Head } from "$fresh/runtime.ts";
-
+import RegisterSound from "../../islands/RegisterSound.tsx";
 function CalculatorButton({buttonNumber}:number){
   return <>
   <div class="block text-center py-2 
@@ -34,9 +34,7 @@ function Calculator(){
   <div class="grid grid-cols-5 grid-rows-3 gap-4 border-solid border-4 border-MyOrangeLighter">
   <div class="col-span-3 row-span-3 m-2">
 
-    <div class="grid grid-cols-3  grid-rows-3 gap-4">
-      <InputButton/>
-    </div>
+    <RegisterSound/>
 
 
   </div>
