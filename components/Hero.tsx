@@ -11,10 +11,14 @@ export default function Hero() {
     >
       <div class="space-y-4 text-center z-0">
         <h1 class="text-4xl inline-block font-bold text-MyOrange z-10"
-        >お店屋さんごっこDX</h1>
+        >なんレジ！</h1>
         <p class="text-xl max-w-lg text-MyOrangeLighter"
         >
-          QRコードをおもちゃにくっつけて、レジスター遊ぼう！
+          なんでもピピッとレジスター！
+        </p>
+        <p class="text-xl max-w-lg text-MyOrangeLighter"
+        >
+          QRコードを作成して、おもちゃくにくっつけよう！
         </p>
       </div>
 
