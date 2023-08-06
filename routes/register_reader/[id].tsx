@@ -3,7 +3,7 @@ import Reader from "../../islands/Reader.tsx";
 import CameraButton from "../../islands/CameraButton.tsx";
 import { PageProps } from "$fresh/server.ts";
 
-
+let ref=""
 function Box({title,id}:string|null){
     return(
         <div class="p-3 min-h-[24em] z-0 bg-MyWhite m-3 
@@ -13,6 +13,9 @@ function Box({title,id}:string|null){
             <VideoButton id={id}/>
             <CodeReader />
             <ScanItemBox />
+
+            <a id="switch" href={ref} class="block text-center py-2 rounded-md border-solid border-2 border-MyViolet text-MyViolet">レジスターに切り替える</a>
+
         </div>
 
     )
@@ -50,7 +53,7 @@ function ScanItemBox(){
 }
 export default function Home(props: PageProps) {
   const id = props.params.id;
-
+  ref = "/register/"+id;
   return (
     <>
     <Head>
@@ -59,7 +62,6 @@ export default function Home(props: PageProps) {
     <body>
     <Box title="カメラ映像からQRコードをスキャンしよう！" id={id}
     />
-
     <script type="text/javascript" src="https://unpkg.com/@zxing/browser@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js"></script>
     </body>
