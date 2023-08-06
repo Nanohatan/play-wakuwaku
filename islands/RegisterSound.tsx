@@ -2,14 +2,30 @@
 function playSound(key){
     const audio = new Audio('/audio.mp3');
     audio.play();
+
     if (key==="C"){
         document.getElementById('price').value = "";
-    }else{
+    }if (key==="=") {
+        console.log( document.getElementById('price').value );
+        calculate();
+    } if(key!="C" & key!="=") {
         document.getElementById('price').value += key;
     }
-    
-    
+
 }
+function calculate() {
+    const display = document.getElementById('price');
+    let s = display.value;
+    s = s.replace("x","*")
+    s = s.replace("÷","/")
+
+    try {
+      const result = eval(s);
+      display.value = result;
+    } catch (error) {
+      display.value = 'Error';
+    }
+  } 
 
 function CalculatorButton({buttonNumber}:number){
   return <>
