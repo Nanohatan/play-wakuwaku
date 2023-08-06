@@ -20,6 +20,8 @@ export default function SocketClient({id}) {
     };
   }, []); // 空の配列を渡すことで一度だけ実行される
   socket.on("register receive info", (data) => {
+    const audio = new Audio('/audio.mp3');
+    audio.play();
     const nameDisplayDiv = document.getElementById("name");
     const name =  data.text.name;
     const priceDisplayDiv = document.getElementById("price");
