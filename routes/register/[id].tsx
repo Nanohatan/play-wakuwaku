@@ -31,11 +31,11 @@ export function DisplayBit({n}:number){
 function Calculator(){
   
   return <>
-  <div class="m-3 border-solid border-4 border-MyOrange">
-  <div class="grid grid-cols-5 grid-rows-3 gap-4 border-solid border-4 border-MyOrangeLighter">
+  <div class="m-3 rounded-md border-solid border-4 border-MyOrange">
+  <div class="grid grid-cols-5 grid-rows-3 gap-4">
   <div class="col-span-3 row-span-3 m-2">
 
-    <RegisterSound/>
+    <RegisterSound isNormalBtn={true}/>
 
 
   </div>
@@ -47,10 +47,10 @@ function Calculator(){
 
     <div  class="row-span-1 p-3">
     <input id="price" style="text-align:right; width:100%;" readonly></input>
-      
     </div>
-
-
+  </div>
+  <div class="col-span-2 row-span-2 m-2 text-right">
+    <RegisterSound isNormalBtn={false}/>
   </div>
 
   </div>
